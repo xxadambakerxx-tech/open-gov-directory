@@ -4,7 +4,7 @@ A lightning-fast, SEO-optimized static directory built with Jekyll that maps U.S
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 Navigating local government websites can be tedious. This project aims to provide a clean, centralized index linking citizens, researchers, and real estate professionals directly to official `.gov` resources. 
 
@@ -15,7 +15,7 @@ Because it is powered by **Jekyll**, the entire site compiles into raw static HT
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 open-gov-directory/
@@ -89,7 +89,7 @@ Follow these steps to run the project locally on your machine:
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 This site is configured for zero-cost, automated deployment via modern static hosting providers (such as **Cloudflare Pages** or **Netlify**):
 
@@ -100,12 +100,12 @@ This site is configured for zero-cost, automated deployment via modern static ho
 
 ---
 
-## ⚖️ Disclaimer
+## Disclaimer
 
 *The data and links presented on this site are gathered from public government sources. This project is a directory index and makes no warranties regarding the accuracy, completeness, or up-to-date status of external government websites. This content is not legal or professional title advice.*
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
