@@ -1,0 +1,18 @@
+version: 1
+schema: department-type-v1
+department_types:
+  - key: assessor
+    label: Assessor
+    description: Property valuation, assessment, and tax roll records.
+  - key: clerk
+    label: Clerk
+    description: Official records, elections, and clerk services.
+  - key: recorder
+    label: Recorder
+    description: Deeds, recording, and land title records.
+  - key: treasurer
+    label: Treasurer
+    description: Tax collection, receipts, and treasury operations.
+  - key: gis
+    label: GIS
+    description: Maps, parcel boundaries, and geographic datasets.

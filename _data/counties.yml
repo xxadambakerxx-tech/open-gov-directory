@@ -1,0 +1,58 @@
+version: 1
+schema: county-department-v1
+counties:
+  - id: ca-los-angeles
+    name: Los Angeles County
+    slug: los-angeles
+    state: California
+    state_code: CA
+    county_type: county
+    departments:
+      - type: assessor
+        name: Los Angeles County Assessor
+        url: https://assessor.lacounty.gov/
+        phone: (213) 974-3211
+        notes: Property tax assessment and parcel records.
+      - type: recorder
+        name: Los Angeles County Registrar-Recorder/County Clerk
+        url: https://www.lavote.net/
+        phone: (800) 815-2666
+        notes: Recording, elections, and clerk services.
+      - type: treasurer
+        name: Los Angeles County Tax Collector
+        url: https://ttc.lacounty.gov/
+        phone: (213) 974-3211
+        notes: Tax collection and payment services.
+      - type: gis
+        name: Los Angeles County GIS Data Portal
+        url: https://egis3.lacounty.gov/gis-mapping/
+        phone: null
+        notes: Parcel and geographic information systems data.
+
+  - id: tx-travis
+    name: Travis County
+    slug: travis
+    state: Texas
+    state_code: TX
+    county_type: county
+    departments:
+      - type: assessor
+        name: Travis County Tax Office
+        url: https://tax-office.traviscountytx.gov/
+        phone: (512) 854-9473
+        notes: Property appraisal and tax administration.
+      - type: clerk
+        name: Travis County Clerk
+        url: https://www.traviscountyclerk.org/
+        phone: (512) 854-9188
+        notes: Official records and county clerk services.
+      - type: treasurer
+        name: Travis County Treasurer
+        url: https://treasurer.traviscountytx.gov/
+        phone: (512) 854-9419
+        notes: Tax billing and payment management.
+      - type: gis
+        name: Travis County GIS
+        url: https://traviscountytx.gov/gis/
+        phone: null
+        notes: Parcel and map utilities for county residents.

@@ -42,24 +42,50 @@ open-gov-directory/
 
 ---
 
-## Data Schema Example (`_data/counties/example.yml`)
+## Standardized YAML Schema
 
-Data is structured in clean YAML files so new jurisdictions can be added or updated without touching core templates:
+County and department records use a single schema so each jurisdiction can be added consistently without touching templates.
+
+Primary dataset: `_data/counties.yml`
 
 ```yaml
-state: "California"
-state_slug: "ca"
+version: 1
+schema: county-department-v1
 counties:
-  - name: "Los Angeles County"
-  - slug: "los-angeles"
-    assessor_name: "LA County Assessor"
-    assessor_url: "https://assessor.lacounty.gov/"
-    recorder_name: "LA County Registrar-Recorder/County Clerk"
-    recorder_url: "https://www.lavote.net/"
-    treasurer_name: "LA County Tax Collector"
-    treasurer_url: "https://ttc.lacounty.gov/"
-    phone: "(213) 974-3211"
+  - id: ca-los-angeles
+    name: Los Angeles County
+    slug: los-angeles
+    state: California
+    state_code: CA
+    county_type: county
+    departments:
+      - type: assessor
+        name: Los Angeles County Assessor
+        url: https://assessor.lacounty.gov/
+        phone: (213) 974-3211
+        notes: Property tax assessment and parcel records.
+      - type: recorder
+        name: Los Angeles County Registrar-Recorder/County Clerk
+        url: https://www.lavote.net/
+        phone: (800) 815-2666
+        notes: Recording and elections services.
 ```
+
+Reference lookup: `_data/department_types.yml`
+
+```yaml
+version: 1
+schema: department-type-v1
+department_types:
+  - key: assessor
+    label: Assessor
+    description: Property valuation, assessment, and tax roll records.
+  - key: recorder
+    label: Recorder
+    description: Deeds, recording, and land title records.
+```
+
+This structure keeps the county record stable while allowing each department to be normalized by `type`, `name`, `url`, and optional `phone` and `notes` metadata.
 
 ---
 
