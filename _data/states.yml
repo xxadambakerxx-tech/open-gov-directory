@@ -1,0 +1,27 @@
+version: 1
+schema: state-v1
+states:
+  - code: CA
+    name: California
+    slug: california
+    pilot: true
+    counties_in_scope:
+      - ca-los-angeles
+      - ca-san-diego
+      - ca-riverside
+  - code: TX
+    name: Texas
+    slug: texas
+    pilot: true
+    counties_in_scope:
+      - tx-travis
+      - tx-harris
+      - tx-dallas
+  - code: FL
+    name: Florida
+    slug: florida
+    pilot: true
+    counties_in_scope:
+      - fl-miami-dade
+      - fl-broward
+      - fl-hillsborough
