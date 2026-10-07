@@ -1,0 +1,254 @@
+version: 1
+schema: county-department-v1
+counties:
+  - id: ca-los-angeles
+    name: Los Angeles County
+    slug: los-angeles
+    state: California
+    state_code: CA
+    county_type: county
+    departments:
+      - type: assessor
+        name: Los Angeles County Assessor
+        url: https://assessor.lacounty.gov/
+        phone: (213) 974-3211
+        notes: Property tax assessment and parcel records.
+      - type: recorder
+        name: Los Angeles County Registrar-Recorder/County Clerk
+        url: https://www.lavote.net/
+        phone: (800) 815-2666
+        notes: Recording, elections, and clerk services.
+      - type: treasurer
+        name: Los Angeles County Tax Collector
+        url: https://ttc.lacounty.gov/
+        phone: (213) 974-3211
+        notes: Tax collection and payment services.
+      - type: gis
+        name: Los Angeles County GIS Data Portal
+        url: https://egis3.lacounty.gov/gis-mapping/
+        phone: null
+        notes: Parcel and geographic information systems data.
+
+  - id: tx-travis
+    name: Travis County
+    slug: travis
+    state: Texas
+    state_code: TX
+    county_type: county
+    departments:
+      - type: assessor
+        name: Travis County Tax Office
+        url: https://tax-office.traviscountytx.gov/
+        phone: (512) 854-9473
+        notes: Property appraisal and tax administration.
+      - type: clerk
+        name: Travis County Clerk
+        url: https://www.traviscountyclerk.org/
+        phone: (512) 854-9188
+        notes: Official records and county clerk services.
+      - type: treasurer
+        name: Travis County Treasurer
+        url: https://treasurer.traviscountytx.gov/
+        phone: (512) 854-9419
+        notes: Tax billing and payment management.
+      - type: gis
+        name: Travis County GIS
+        url: https://traviscountytx.gov/gis/
+        phone: null
+        notes: Parcel and map utilities for county residents.
+
+  - id: tx-harris
+    name: Harris County
+    slug: harris
+    state: Texas
+    state_code: TX
+    county_type: county
+    departments:
+      - type: assessor
+        name: Harris County Appraisal District
+        url: https://hcad.org/
+        phone: (713) 812-5800
+        notes: Appraisal and tax roll information for Harris County.
+      - type: clerk
+        name: Harris County Clerk
+        url: https://www.harriscountyclerk.com/
+        phone: (713) 274-8525
+        notes: Court records, legal filings, and official documents.
+      - type: recorder
+        name: Harris County Property Records
+        url: https://www.harriscountytx.gov/Departments/Property-Records
+        phone: null
+        notes: Land records and property document access.
+      - type: treasurer
+        name: Harris County Treasurer
+        url: https://www.harriscountytx.gov/Departments/Treasurer
+        phone: (713) 274-8500
+        notes: Tax collection and financial administration.
+
+  - id: tx-dallas
+    name: Dallas County
+    slug: dallas
+    state: Texas
+    state_code: TX
+    county_type: county
+    departments:
+      - type: assessor
+        name: Dallas County Appraisal District
+        url: https://www.dallascad.org/
+        phone: (214) 631-0910
+        notes: Property tax appraisals and assessed values.
+      - type: clerk
+        name: Dallas County Clerk
+        url: https://www.dallascounty.org/government/clerk/
+        phone: (214) 653-6811
+        notes: Civil, criminal, and land records.
+      - type: treasurer
+        name: Dallas County Treasurer
+        url: https://www.dallascounty.org/government/treasurer/
+        phone: (214) 653-7360
+        notes: Tax remittance and county treasury operations.
+      - type: gis
+        name: Dallas County GIS
+        url: https://www.dallascounty.org/government/gis/
+        phone: null
+        notes: Parcel maps and geographic data.
+
+  - id: ca-san-diego
+    name: San Diego County
+    slug: san-diego
+    state: California
+    state_code: CA
+    county_type: county
+    departments:
+      - type: assessor
+        name: San Diego County Assessor/Recorder/County Clerk
+        url: https://arcc.sdcounty.ca.gov/
+        phone: (858) 565-5900
+        notes: Property assessment, recording, and official records.
+      - type: recorder
+        name: San Diego County Recorder
+        url: https://arcc.sdcounty.ca.gov/records/
+        phone: (858) 565-5900
+        notes: Property ownership and recording services.
+      - type: treasurer
+        name: San Diego County Treasurer-Tax Collector
+        url: https://www.sandiegocounty.gov/content/sdc/treasurer.html
+        phone: (619) 531-5200
+        notes: Tax collection and payment administration.
+      - type: gis
+        name: San Diego County GIS
+        url: https://www.sandiegocounty.gov/content/sdc/sdcgis.html
+        phone: null
+        notes: Parcel layers and county mapping resources.
+
+  - id: ca-riverside
+    name: Riverside County
+    slug: riverside
+    state: California
+    state_code: CA
+    county_type: county
+    departments:
+      - type: assessor
+        name: Riverside County Assessor
+        url: https://rivcoacr.org/
+        phone: (951) 955-3800
+        notes: Tax assessments and parcel valuation records.
+      - type: clerk
+        name: Riverside County Clerk
+        url: https://rivcoclerk.org/
+        phone: (951) 955-6200
+        notes: Clerk operations and public filings.
+      - type: treasurer
+        name: Riverside County Treasurer-Tax Collector
+        url: https://www.rivco.org/TreasurerTaxCollector
+        phone: (951) 955-3900
+        notes: Tax and fee collection services.
+      - type: gis
+        name: Riverside County GIS
+        url: https://www.rivco.org/GIS
+        phone: null
+        notes: County maps and parcel GIS data.
+
+  - id: fl-miami-dade
+    name: Miami-Dade County
+    slug: miami-dade
+    state: Florida
+    state_code: FL
+    county_type: county
+    departments:
+      - type: assessor
+        name: Miami-Dade County Property Appraiser
+        url: https://www.miamidade.gov/propertyappraiser/
+        phone: (305) 375-3670
+        notes: Real property assessments and tax records.
+      - type: clerk
+        name: Miami-Dade County Clerk
+        url: https://www.miamidadeclerk.gov/
+        phone: (305) 349-7514
+        notes: Official records and legal document services.
+      - type: recorder
+        name: Miami-Dade County Recorder
+        url: https://www.miamidade.gov/recorder/
+        phone: null
+        notes: Recorded documents and land ownership records.
+      - type: treasurer
+        name: Miami-Dade County Tax Collector
+        url: https://www.miamidade.gov/taxcollector/
+        phone: (305) 375-2830
+        notes: Property tax collection and payment services.
+
+  - id: fl-broward
+    name: Broward County
+    slug: broward
+    state: Florida
+    state_code: FL
+    county_type: county
+    departments:
+      - type: assessor
+        name: Broward County Property Appraiser
+        url: https://www.bcpao.gov/
+        phone: (954) 357-6830
+        notes: Property valuation and tax-related records.
+      - type: clerk
+        name: Broward County Clerk
+        url: https://www.browardclerk.org/
+        phone: (954) 831-6565
+        notes: Official records and county clerk services.
+      - type: treasurer
+        name: Broward County Tax Collector
+        url: https://www.broward.org/TaxCollector
+        phone: (954) 357-5579
+        notes: Tax collection and payment processing.
+      - type: gis
+        name: Broward County GIS
+        url: https://www.broward.org/Maps
+        phone: null
+        notes: Parcel mapping and geographic data.
+
+  - id: fl-hillsborough
+    name: Hillsborough County
+    slug: hillsborough
+    state: Florida
+    state_code: FL
+    county_type: county
+    departments:
+      - type: assessor
+        name: Hillsborough County Property Appraiser
+        url: https://www.hcpafl.org/
+        phone: (813) 272-6100
+        notes: Tax assessments and property valuation records.
+      - type: clerk
+        name: Hillsborough County Clerk
+        url: https://www.hillsboroughclerk.org/
+        phone: (813) 232-6500
+        notes: Public records, court filings, and clerk services.
+      - type: treasurer
+        name: Hillsborough County Tax Collector
+        url: https://www.hillsboroughcounty.org/business/tax-collector
+        phone: (813) 272-6100
+        notes: Tax collection and payment information.
+      - type: gis
+        name: Hillsborough County GIS
+        url: https://www.hillsboroughcounty.org/business/gis
+        phone: null
+        notes: County map and parcel data resources.
