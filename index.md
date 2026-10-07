@@ -38,7 +38,7 @@ title: Home
       <h2 class="text-3xl font-black tracking-tight text-slate-800">Explore by State</h2>
       <p class="mt-2 text-slate-600">Start with a state to find county and municipal records.</p>
     </div>
-    <a href="#" class="hidden rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-600 shadow-sm md:inline-flex">View all</a>
+    <a href="{{ '/all-jurisdictions/' | relative_url }}" class="hidden rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-600 shadow-sm md:inline-flex">View all</a>
   </div>
 
   <div class="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
