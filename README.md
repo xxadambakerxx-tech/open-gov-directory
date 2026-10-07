@@ -42,7 +42,7 @@ open-gov-directory/
 
 ---
 
-## 🛠️ Data Schema Example (`_data/counties/example.yml`)
+## Data Schema Example (`_data/counties/example.yml`)
 
 Data is structured in clean YAML files so new jurisdictions can be added or updated without touching core templates:
 
@@ -63,7 +63,7 @@ counties:
 
 ---
 
-## ⚙️ Local Development Setup
+## Local Development Setup
 
 Follow these steps to run the project locally on your machine:
 
