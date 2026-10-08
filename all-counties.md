@@ -19,7 +19,8 @@ title: All counties
     {% assign counties = site.data.counties.counties | sort: 'state_code' %}
     {% for county in counties %}
       {% assign department_count = county.departments | size %}
-      <a href="{{ '/counties/' | relative_url }}{{ county.slug }}/" class="rounded-xl border border-slate-200 bg-white p-3 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+      {% assign state = site.data.states.states | where: 'code', county.state_code | first %}
+      <a href="{{ '/states/' | relative_url }}{{ state.slug }}/{{ county.slug }}/" class="rounded-xl border border-slate-200 bg-white p-3 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
         <div class="text-xl font-black tracking-tight text-slate-800">{{ county.state_code }}-{{ county.name }}</div>
         <div class="mt-2 text-[10px] uppercase tracking-wide text-slate-500">{{ department_count }} department portals</div>
       </a>

@@ -58,7 +58,7 @@ layout: default
                       <div class="text-sm font-medium text-slate-500">{{ county.departments.size }} department portals</div>
                       <div class="text-xs text-slate-400">Updated for public access</div>
                     </div>
-                    <a href="{{ '/counties/' | relative_url }}{{ county.slug }}/" class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
+                    <a href="{{ '/states/' | relative_url }}{{ state.slug }}/{{ county.slug }}/" class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
                       View {{ county.name }}
                     </a>
                   </div>
@@ -83,7 +83,7 @@ layout: default
         <ul class="mt-3 space-y-2 text-sm text-slate-600">
           {% for county in county_list %}
             <li class="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
-              <a href="{{ '/counties/' | relative_url }}{{ county.slug }}/" class="hover:text-slate-900">{{ county.name }}</a>
+              <a href="{{ '/states/' | relative_url }}{{ state.slug }}/{{ county.slug }}/" class="hover:text-slate-900">{{ county.name }}</a>
             </li>
           {% endfor %}
         </ul>
