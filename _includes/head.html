@@ -12,21 +12,21 @@
   {% capture page_description %}Find official county and municipal public records portals for {{ state.name }}.{% endcapture %}
 {% endif %}
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
   <title>{{ page_title | escape }}</title>
-  <meta name="description" content="{{ page_description | strip | escape }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ page_title | escape }}" />
-  <meta property="og:description" content="{{ page_description | strip | escape }}" />
+  <meta name="description" content="{{ page_description | strip | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_description | strip | escape }}">
   {% if site.url %}
-    <link rel="canonical" href="{{ page.url | absolute_url }}" />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
   {% endif %}
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="{{ page_title | escape }}" />
-  <meta name="twitter:description" content="{{ page_description | strip | escape }}" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page_title | escape }}">
+  <meta name="twitter:description" content="{{ page_description | strip | escape }}">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,6 +65,27 @@
     };
   </script>
   <style>
+    .skip-link {
+      position: absolute;
+      z-index: 50;
+      top: 1rem;
+      left: 1rem;
+      transform: translateY(-200%);
+      border-radius: 0.25rem;
+      background: #fff;
+      padding: 0.75rem 1rem;
+      color: #0f172a;
+    }
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+    :focus-visible {
+      outline: 3px solid #005fcc;
+      outline-offset: 3px;
+    }
+    #main-content:focus {
+      outline: none;
+    }
     body {
       font-family: "Segoe UI", system-ui, sans-serif;
     }

@@ -47,7 +47,7 @@ title: Home
 
   <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,2.3fr)_320px]">
     <section>
-      <h3 class="mb-5 text-3xl font-black tracking-tight text-slate-800">Recently Verified Portals</h3>
+      <h2 class="mb-5 text-3xl font-black tracking-tight text-slate-800">Recently Verified Portals</h2>
 
       <div class="space-y-4">
         {% assign sample_ports = "Los Angeles County Assessor|Cook County Recorder of Deeds|Maricopa County Treasurer" | split: '|' %}
@@ -55,14 +55,14 @@ title: Home
         <article class="flex items-start justify-between gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
           <div class="flex items-start gap-3">
             <div class="mt-1 flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 bg-slate-50 text-slate-600">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm1.5 2.5h9a.5.5 0 010 1h-9a.5.5 0 010-1zm0 3h9a.5.5 0 010 1h-9a.5.5 0 010-1zm0 3h6a.5.5 0 010 1h-6a.5.5 0 010-1z" />
               </svg>
             </div>
             <div>
-              <h4 class="text-xl font-semibold text-slate-800">{{ portal }}</h4>
+              <h3 class="text-xl font-semibold text-slate-800">{{ portal }}</h3>
               <p class="mt-1 text-sm text-slate-500">{{ portal | split: ' ' | slice: 0, 4 | join: ' ' }} • Property assessment</p>
-              <p class="mt-2 break-all text-sm text-slate-400">example.gov</p>
+              <p class="mt-2 break-all text-sm text-slate-600">example.gov</p>
             </div>
           </div>
           <div class="mt-1 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700">

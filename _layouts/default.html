@@ -2,29 +2,30 @@
 <html lang="en">
   {% include head.html %}
   <body class="bg-slatebg text-ink antialiased">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="border-b border-slate-200 bg-white/90 backdrop-blur-sm">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-4">
         <div class="flex items-center gap-3">
           <div class="flex h-8 w-8 items-center justify-center rounded-md bg-slate-900 shadow-soft">
-            <span class="brand-mark"></span>
+            <span class="brand-mark" aria-hidden="true"></span>
           </div>
           <a href="{{ '/' | relative_url }}" class="text-xl font-bold tracking-tight text-slate-900">Open Gov Directory</a>
         </div>
 
-        <nav class="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
+        <nav aria-label="Primary navigation" class="order-3 flex w-full items-center justify-between gap-3 text-xs font-medium text-slate-700 sm:gap-6 sm:text-sm md:order-none md:w-auto">
           <a href="{{ '/all-jurisdictions/' | relative_url }}" class="hover:text-slate-900">States</a>
           <a href="{{ '/all-counties/' | relative_url }}" class="hover:text-slate-900">Counties</a>
           <a href="{{ '/about-us/' | relative_url }}" class="hover:text-slate-900">About</a>
         </nav>
 
         <div class="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600">
-          <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+          <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500" aria-hidden="true"></span>
           U.S. public records
         </div>
       </div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       {{ content }}
     </main>
 
@@ -36,7 +37,7 @@
           </div>
           <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
             <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-              <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Legal</span>
+              <span class="text-xs font-semibold uppercase tracking-wide text-slate-600">Legal</span>
               <a href="{{ '/privacy-policy/' | relative_url }}" class="hover:text-slate-700">Privacy Policy</a>
               <a href="{{ '/terms-of-service/' | relative_url }}" class="hover:text-slate-700">Terms of Service</a>
               <a href="{{ '/disclaimer/' | relative_url }}" class="hover:text-slate-700">Disclaimer</a>
@@ -57,7 +58,7 @@
           searchInput: input,
           resultsContainer: results,
           json: "{{ '/search.json' | relative_url }}",
-          searchResultTemplate: '<li role="option"><a class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50" href="{url}"><span class="font-medium">{title}</span><span class="ml-2 text-xs text-slate-500">{category}</span></a></li>',
+          searchResultTemplate: '<li><a class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50" href="{url}"><span class="font-medium">{title}</span><span class="ml-2 text-xs text-slate-500">{category}</span></a></li>',
           noResultsText: '<li class="px-4 py-2 text-sm text-slate-500">No matching directories found</li>',
           limit: 10,
           fuzzy: false
@@ -65,7 +66,6 @@
         input.addEventListener("input", function () {
           var expanded = input.value.trim().length > 0;
           results.hidden = !expanded;
-          input.setAttribute("aria-expanded", String(expanded));
         });
       });
     </script>
