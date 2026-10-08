@@ -1,62 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{{ site.description }}" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              ink: '#1f2a37',
-              slatebg: '#eef3f4',
-              panel: '#f8fbfb',
-              accent: '#0f172a',
-              primary: '#0f766e',
-              muted: '#6b7280'
-            },
-            boxShadow: {
-              soft: '0 10px 25px rgba(15, 23, 42, 0.06)'
-            }
-          }
-        }
-      };
-    </script>
-    <style>
-      body {
-        font-family: "Segoe UI", system-ui, sans-serif;
-      }
-      .brand-mark {
-        width: 16px;
-        height: 16px;
-        border-radius: 4px;
-        background: linear-gradient(135deg, #ffffff 0%, #d8ffef 100%);
-        position: relative;
-        display: inline-block;
-      }
-      .brand-mark::before,
-      .brand-mark::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-      }
-      .brand-mark::before {
-        background: rgba(15, 23, 42, 0.12);
-        clip-path: polygon(50% 0%, 100% 28%, 100% 100%, 0% 100%, 0% 28%);
-      }
-      .brand-mark::after {
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        top: 3px;
-        background: rgba(15, 23, 42, 0.18);
-        clip-path: polygon(0 100%, 100% 100%, 100% 0, 64% 0, 64% 62%, 36% 62%, 36% 0, 0 0);
-      }
-    </style>
-  </head>
+  {% include head.html %}
   <body class="bg-slatebg text-ink antialiased">
     <header class="border-b border-slate-200 bg-white/90 backdrop-blur-sm">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">

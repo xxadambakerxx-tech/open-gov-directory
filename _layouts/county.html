@@ -69,7 +69,7 @@ layout: default
                     <div class="text-sm font-medium text-slate-500">{{ department.url | remove: 'https://' | remove: 'http://' }}</div>
                     <div class="text-xs text-slate-400">Official agency website</div>
                   </div>
-                  <a href="{{ department.url }}" target="_blank" rel="noreferrer noopener" class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
+                  <a href="{{ department.url }}" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
                     Visit {{ county.name }} {{ department_type.label | default: 'Portal' }}
                   </a>
                 </div>
