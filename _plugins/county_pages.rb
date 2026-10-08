@@ -1,4 +1,23 @@
+require 'jekyll'
+
 module Jekyll
+  class StatePage < PageWithoutAFile
+    def initialize(site, state)
+      @site = site
+      @base = site.source
+      @dir = File.join("states", state.fetch("slug"))
+      @name = "index.html"
+      process(@name)
+      self.data = {
+        "layout" => "state",
+        "title" => state.fetch("name"),
+        "state_slug" => state.fetch("slug"),
+        "state_code" => state.fetch("code"),
+        "permalink" => "/states/#{state.fetch('slug')}/"
+      }
+    end
+  end
+
   class CountyPage < PageWithoutAFile
     def initialize(site, state, county)
       @site = site
@@ -12,6 +31,18 @@ module Jekyll
         "county_id" => county.fetch("id"),
         "permalink" => "/states/#{state.fetch('slug')}/#{county.fetch('slug')}/"
       }
+    end
+  end
+
+  class StatePagesGenerator < Generator
+    safe true
+
+    def generate(site)
+      states = site.data.dig("states", "states") || []
+
+      states.each do |state|
+        site.pages << StatePage.new(site, state)
+      end
     end
   end
 
