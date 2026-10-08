@@ -71,10 +71,7 @@ layout: default
         <div class="rounded-2xl border border-slate-200 bg-white p-6 text-slate-600">No county records are available for this state yet.</div>
       {% endif %}
 
-      <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
-        <div class="text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-400">Advertisement</div>
-        <div class="mt-4 flex min-h-[150px] items-center justify-center rounded-lg border border-dashed border-slate-200 bg-slate-50 text-sm text-slate-400">Display ad space</div>
-      </div>
+      {% include ad-banner.html slot="state-directory" %}
     </section>
 
     <aside class="space-y-5">

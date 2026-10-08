@@ -77,10 +77,7 @@ title: Home
     </section>
 
     <aside class="space-y-5">
-      <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-        <div class="mb-4 text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-400">Advertisement</div>
-        <div class="flex min-h-[180px] items-center justify-center rounded-lg border border-dashed border-slate-200 bg-slate-50 text-sm text-slate-400">Display ad space</div>
-      </div>
+      {% include ad-banner.html slot="homepage-sidebar" %}
 
       <div class="rounded-xl border border-emerald-200 bg-emerald-50 p-5 shadow-sm">
         <div class="flex items-center gap-3 text-emerald-800">
