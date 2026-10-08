@@ -39,40 +39,27 @@ title: Privacy Policy
       <li>Pages viewed and site usage patterns</li>
     </ul>
     <p>
-      This information is typically collected through web server logs and analytics tools used to monitor website performance and reliability. We also use standard web technologies, including cookies and similar tracking mechanisms, which may be used by third-party advertising providers.
+      The Site does not currently use first-party analytics or advertising services, and it does not set cookies for analytics or advertising. The hosting provider may process connection information in server logs to deliver and secure the Site. The Site also loads scripts from third-party content delivery networks; those providers may receive standard request information such as your IP address and browser details when your browser requests a script. Review those providers' privacy policies for details.
     </p>
 
     <h2 class="mt-8 text-2xl font-black text-slate-800">3. How We Use Information</h2>
     <p>
-      We use the information described above to:
+      The hosting provider may use connection information to:
     </p>
     <ul class="list-disc pl-6">
       <li>Maintain and improve the Site's performance and reliability</li>
       <li>Diagnose technical issues and investigate misuse or abuse</li>
-      <li>Analyze traffic patterns and user engagement</li>
-      <li>Improve navigation, content quality, and site usability</li>
-      <li>Support advertising operations and ad measurement</li>
     </ul>
     <p>
-      We do not use the Site to collect or store personal records, legal filings, tax returns, or other sensitive data from visitors.
+      We do not use the Site to collect or store personal records, legal filings, tax returns, or other sensitive data from visitors. If analytics or advertising services are added later, this policy will be updated to describe their data practices before they are enabled.
     </p>
 
     <h2 class="mt-8 text-2xl font-black text-slate-800">4. Third-Party Advertisers and Cookies</h2>
     <p>
-      The Site may display advertisements through third-party advertising networks. These third parties may use cookies, web beacons, and similar technologies to collect information about your visits to the Site and other websites in order to provide relevant advertising and measure ad performance.
+      The Site does not currently display third-party advertisements. If advertising is introduced, the advertising provider may use cookies, web beacons, or similar technologies, and this policy will be updated before those services are enabled.
     </p>
     <p>
-      Examples of advertising cookies may include Google cookies such as the DART cookie, which may be used to personalize or serve ads based on your prior visits to this Site or other websites. These third parties may also use cookies to understand ad effectiveness and provide contextual or personalized ad content.
-    </p>
-    <p>
-      You may opt out of personalized advertising by visiting:
-    </p>
-    <ul class="list-disc pl-6">
-      <li>Google Ads Settings: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline">https://adssettings.google.com</a></li>
-      <li>Network Advertising Initiative (NAI): <a href="https://optout.networkadvertising.org" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline">https://optout.networkadvertising.org</a></li>
-    </ul>
-    <p>
-      Please note that ad networks may operate under their own privacy policies, and Open Gov Directory does not control or assume responsibility for their practices.
+      This section will be expanded with the provider's identity, cookie details, and opt-out options if an advertising network is selected.
     </p>
 
     <h2 class="mt-8 text-2xl font-black text-slate-800">5. External Links Disclaimer</h2>
@@ -104,10 +91,7 @@ title: Privacy Policy
       If you have any questions, concerns, or requests regarding this Privacy Policy or how your information is treated on this Site, please contact us at:
     </p>
     <p>
-      <strong>Email:</strong> privacy@opengovdirectory.example
-    </p>
-    <p>
-      Please note that this email address is a placeholder for privacy inquiries and may be replaced with a real contact address as the project matures.
+      The site operator has not published a privacy contact address. A working contact method should be added here before public launch.
     </p>
 
     <p class="mt-8 text-sm text-slate-500">

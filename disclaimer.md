@@ -54,7 +54,7 @@ title: Disclaimer
 
     <h2 class="mt-8 text-2xl font-black text-slate-800">7. Contact</h2>
     <p>
-      If you have questions about this Disclaimer, please contact us at: <strong>legal@opengovdirectory.example</strong>
+      The site operator has not published a contact address. A working contact method should be added here before public launch.
     </p>
 
     <p class="mt-8 text-sm text-slate-500">

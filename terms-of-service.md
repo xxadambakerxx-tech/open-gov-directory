@@ -116,10 +116,7 @@ title: Terms of Service
       If you have questions about these Terms, please contact us at:
     </p>
     <p>
-      <strong>Email:</strong> legal@opengovdirectory.example
-    </p>
-    <p>
-      Please note that this email address is a placeholder and may be replaced with a production contact address in the future.
+      The site operator has not published a contact address. A working contact method should be added here before public launch.
     </p>
 
     <p class="mt-8 text-sm text-slate-500">
