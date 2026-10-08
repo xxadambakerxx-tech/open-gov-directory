@@ -117,12 +117,11 @@ Follow these steps to run the project locally on your machine:
 
 ## Deployment
 
-This site is configured for zero-cost, automated deployment via modern static hosting providers (such as **Cloudflare Pages** or **Netlify**):
+This site includes a Netlify build configuration for automated deployment:
 
-1. Push your repository to GitHub.
-2. Link your GitHub repo to Cloudflare Pages or Netlify.
-3. Set the build command to: `bundle exec jekyll build`
-4. Set the publish directory to: `_site`
+1. Push the repository to GitHub.
+2. In Netlify, create a site from the `xxadambakerxx-tech/open-gov-directory` repository. The included `netlify.toml` sets the build command to `bundle exec jekyll build` and the publish directory to `_site`.
+3. In the Netlify site settings, add the custom domain and follow its DNS instructions. Netlify provisions HTTPS after the domain's DNS records are verified.
 
 The `jekyll-sitemap` plugin generates `_site/sitemap.xml` during each build. It is supported by GitHub Pages and can be used with Cloudflare Pages and Netlify through the Bundler-based build command above.
 
