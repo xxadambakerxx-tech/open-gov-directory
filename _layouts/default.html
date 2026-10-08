@@ -22,11 +22,13 @@
           U.S. public records
         </div>
       </div>
-      <div class="border-t border-slate-100 px-5 py-3">
-        <div class="mx-auto max-w-6xl">
-          {% include search-box.html id="header-directory-search" %}
+      {% unless page.url == '/' %}
+        <div class="border-t border-slate-100 px-5 py-3">
+          <div class="mx-auto max-w-6xl">
+            {% include search-box.html id="header-directory-search" %}
+          </div>
         </div>
-      </div>
+      {% endunless %}
     </header>
 
     <main>
