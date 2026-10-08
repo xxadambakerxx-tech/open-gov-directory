@@ -1,0 +1,25 @@
+---
+layout: null
+permalink: /search.json
+---
+[
+{% assign first_entry = true %}
+{% assign states = site.data.states.states | sort: 'name' %}
+{% for state in states %}
+  {% unless first_entry %},{% endunless %}
+  {"title": {{ state.name | jsonify }}, "category": "State", "url": {{ '/states/' | append: state.slug | append: '/' | relative_url | jsonify }}}
+  {% assign first_entry = false %}
+{% endfor %}
+{% assign counties = site.data.counties.counties | sort: 'name' %}
+{% for county in counties %}
+  {% assign state = site.data.states.states | where: 'code', county.state_code | first %}
+  {% unless first_entry %},{% endunless %}
+  {"title": {{ county.name | jsonify }}, "category": "County", "url": {{ '/states/' | append: state.slug | append: '/' | append: county.slug | append: '/' | relative_url | jsonify }}}
+  {% assign first_entry = false %}
+  {% for department in county.departments %}
+    {% unless first_entry %},{% endunless %}
+    {"title": {{ department.name | jsonify }}, "category": {{ county.name | jsonify }}, "url": {{ '/states/' | append: state.slug | append: '/' | append: county.slug | append: '/#department-' | append: forloop.index | relative_url | jsonify }}}
+    {% assign first_entry = false %}
+  {% endfor %}
+{% endfor %}
+]

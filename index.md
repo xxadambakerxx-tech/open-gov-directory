@@ -15,14 +15,8 @@ title: Home
         Find official state and local agency portals for property records, recorded documents, and tax information.
       </p>
 
-      <div class="mx-auto mt-8 flex max-w-2xl items-center overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm">
-        <div class="flex items-center gap-3 px-4 py-4 text-slate-400">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M8.5 3a5.5 5.5 0 104.39 9.38l3.53 3.53a1 1 0 001.42-1.42l-3.53-3.53A5.5 5.5 0 008.5 3zm0 2a3.5 3.5 0 110 7 3.5 3.5 0 010-7z" clip-rule="evenodd" />
-          </svg>
-        </div>
-        <input type="text" value="" placeholder="Search states, counties, or municipalities..." class="w-full border-0 bg-transparent px-1 py-4 text-base text-slate-700 placeholder:text-slate-400 focus:outline-none" />
-        <button class="ml-2 mr-3 rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Search</button>
+      <div class="mx-auto mt-8 max-w-2xl">
+        {% include search-box.html id="home-directory-search" %}
       </div>
 
       <div class="mt-3 text-center text-xs text-slate-500">

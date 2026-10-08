@@ -78,6 +78,11 @@
           U.S. public records
         </div>
       </div>
+      <div class="border-t border-slate-100 px-5 py-3">
+        <div class="mx-auto max-w-6xl">
+          {% include search-box.html id="header-directory-search" %}
+        </div>
+      </div>
     </header>
 
     <main>
@@ -105,5 +110,25 @@
         </p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+    <script>
+      document.querySelectorAll("[data-directory-search]").forEach(function (input) {
+        var results = document.getElementById(input.getAttribute("aria-controls"));
+        SimpleJekyllSearch({
+          searchInput: input,
+          resultsContainer: results,
+          json: "{{ '/search.json' | relative_url }}",
+          searchResultTemplate: '<li role="option"><a class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50" href="{url}"><span class="font-medium">{title}</span><span class="ml-2 text-xs text-slate-500">{category}</span></a></li>',
+          noResultsText: '<li class="px-4 py-2 text-sm text-slate-500">No matching directories found</li>',
+          limit: 10,
+          fuzzy: false
+        });
+        input.addEventListener("input", function () {
+          var expanded = input.value.trim().length > 0;
+          results.hidden = !expanded;
+          input.setAttribute("aria-expanded", String(expanded));
+        });
+      });
+    </script>
   </body>
 </html>
