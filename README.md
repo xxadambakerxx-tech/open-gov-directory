@@ -121,8 +121,10 @@ This site is configured for zero-cost, automated deployment via modern static ho
 
 1. Push your repository to GitHub.
 2. Link your GitHub repo to Cloudflare Pages or Netlify.
-3. Set the build command to: `jekyll build`
+3. Set the build command to: `bundle exec jekyll build`
 4. Set the publish directory to: `_site`
+
+The `jekyll-sitemap` plugin generates `_site/sitemap.xml` during each build. It is supported by GitHub Pages and can be used with Cloudflare Pages and Netlify through the Bundler-based build command above.
 
 ---
 

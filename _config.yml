@@ -2,3 +2,5 @@ title: Open Gov Directory
 description: A directory of official public records portals for U.S. states, counties, and municipalities.
 permalink: /:categories/:title/
 disable_disk_cache: true
+plugins:
+  - jekyll-sitemap
